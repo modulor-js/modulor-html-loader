@@ -4,7 +4,8 @@ module.exports = function(source) {
   }, this.query || {});
 
   return `
-    import { html, stopNode, render } from '@modulor-js/html';
+    const { html, stopNode, render } = require('@modulor-js/html');
+
     module.exports = (${options.variable}, $container) => html\`${source}\`.render($container);
   `;
 };
