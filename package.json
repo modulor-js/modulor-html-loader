@@ -16,7 +16,7 @@
     "url": "https://github.com/modulor-js/modulor-html-loader/issues"
   },
   "homepage": "https://github.com/modulor-js/modulor-html-loader#readme",
-  "dependencies": {
+  "optionalDependencies": {
     "@modulor-js/html": "github:modulor-js/modulor-html"
   }
 }
