@@ -6,6 +6,6 @@ module.exports = function(source) {
   return `
     const { html, stopNode, render } = require('@modulor-js/html');
 
-    module.exports = (${options.variable}, $container) => html\`${source}\`.render($container);
+    module.exports = (${options.variable}, $container) => render(html\`${source}\`, $container);
   `;
 };
